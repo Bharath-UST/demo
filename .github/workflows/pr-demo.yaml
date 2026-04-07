@@ -1,0 +1,19 @@
+name: pr-demo
+
+on:
+  pull_request:
+    branch:
+      - main
+
+jobs:
+  validate:
+    runs-on:
+      steps:
+        - name: checkout
+          uses: actions/checkout@v4
+        - name: Validate PR
+          run: echo "PR Validation"
+        - name: Print current directory
+          run: |
+            echo "Present Directory"
+            pwd

@@ -7,13 +7,13 @@ on:
 
 jobs:
   validate:
-    runs-on:
-      steps:
-        - name: checkout
-          uses: actions/checkout@v4
-        - name: Validate PR
-          run: echo "PR Validation"
-        - name: Print current directory
-          run: |
-            echo "Present Directory"
-            pwd
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+      - name: Validate PR
+        run: echo "PR Validation"
+      - name: Print current directory
+        run: |
+          echo "Present Directory"
+          pwd

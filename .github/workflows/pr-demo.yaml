@@ -14,5 +14,6 @@ jobs:
         run: echo "PR validation"
       - name: Print current directory
         run: |
-          echo "Current directory"
+          echo "Present directory"
           pwd
+          
